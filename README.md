@@ -1,6 +1,7 @@
 # Discord-Rich-Presence
 好歐，這會教你怎麼改變你的 discord 狀態顯示欄。  
 看到同學在用，感覺很屌，我就去學了一下。  
+這是我第一次寫 md 檔所以排版可能不好看，我還是個 noob。
 # 開始:設定
 首先，要下載 node.js 才能跑  
 node.js 官網 : https://nodejs.org/zh-tw  
@@ -33,7 +34,7 @@ const client = new rpc.Client({
     transport : 'ipc',
 });
 
-//以下為範例，可用 json 檔儲存======
+//===以下為範例，可用 json 檔儲存===
 const ClientID = "1160967275625582713";
 const Image = "rickroll";
 const TextImage = "Rick you";
@@ -72,4 +73,5 @@ client.on('read',()=>{
     })
 })
 ```
-
+最後在 command 裡輸入 node index 就可以了  
+要停止的話就按 ctrl + c 就會跳出來了  

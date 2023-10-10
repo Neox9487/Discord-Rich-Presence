@@ -3,7 +3,7 @@ const client = new rpc.Client({
     transport : 'ipc',
 });
 
-//以下為範例，可用 json 檔儲存======
+//===以下為範例，可用 json 檔儲存===
 const ClientID = "1160967275625582713";
 const Image = "rickroll";
 const TextImage = "Rick you";
