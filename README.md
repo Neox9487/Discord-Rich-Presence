@@ -10,6 +10,7 @@ node.js 官網 : https://nodejs.org/zh-tw
 1. $ npm install discord.js  
 2. $ npm install discord-rpc  
 3. $ npm init -y  
+
 會跑出 package-lock.json 和 package.json 是正常的  
 
 # 寫程式
@@ -37,36 +38,36 @@ const client = new rpc.Client({
 //===以下為範例，可用 json 檔儲存===
 const ClientID = "1160967275625582713"; //來自機機人的 ID 
 const Image = "rickroll"; //來自機機人素材的的圖片名字
-const TextImage = "Rick you";
+const ImageText = "Rick you";
 const Button = "Rick Roll";
-const url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
-const state = "Ricking";
-const detail = "Never gonna give you up.";
+const Url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+const State = "Ricking";
+const Detail = "Never gonna give you up.";
 //================================
 
 client.login({
     clientId : ClientID
 }).catch(console.error);
 
-client.on('read',()=>{
-
-    console.log('Start!')
-
+client.on('ready', () => {
+    
+    console.log("Start!")
+    
     client.request('SET_ACTIVITY', {
         pid: process.pid,
         activity: {
-            details:detail,
-            state:state,
+            details: Detail,
+            state: State,
             timestamps: {
-                start:Date.now()
+                start: Date.now()
             },
             assets: {
-                large_image:Image,
-                large_text:TextImage,
+                large_image: Image,
+                large_text: ImageText,
             },
             buttons: [{
-                    label:Button,
-                    url:url,
+                    label: Button,
+                    url: Url
                 },
             ]
         }
