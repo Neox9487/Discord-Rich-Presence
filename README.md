@@ -13,6 +13,10 @@ node.js 官網 : https://nodejs.org/zh-tw
 
 會跑出 package-lock.json 和 package.json 是正常的  
 
+還有記得要創一個機器人  
+網址 : https://discord.com/developers
+在 RichPresence 的選項裡設置圖片以及素材
+
 # 寫程式
 創一個檔案 index.js  
 這時你的專案結構會長這樣，看不懂的話可以下載檔案來看看，我也看不太懂  
