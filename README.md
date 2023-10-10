@@ -17,7 +17,7 @@ node.js 官網 : https://nodejs.org/zh-tw
 
 YourFilePath/  
 |--node_modules/  
-&nbsp &nbsp &nbsp |--好多東西但不重要  
+&emsp;|--好多東西但不重要  
 |--index.js  
 |--package-lock.json  
 |--package.json  
