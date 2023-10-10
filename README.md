@@ -25,8 +25,9 @@ YourFilePath/
 之後就要開始寫程式囉  
 其實只需要寫在 index.js 裡而已，而且只有 40 幾行。  
 
-程式碼:
+程式碼:  
 
+```
 const rpc = require('discord-rpc');
 const client = new rpc.Client({
     transport : 'ipc',
@@ -70,5 +71,5 @@ client.on('read',()=>{
         }
     })
 })
- 
+```
 
