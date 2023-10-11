@@ -22,11 +22,11 @@ node.js 官網 : https://nodejs.org/zh-tw
 這時你的專案結構會長這樣，看不懂的話可以下載檔案來看看，我也看不太懂  
 
 YourFilePath/  
-|──node_modules/  
-&emsp;|──好多東西但不重要  
-|──index.js  
-|──package-lock.json  
-|──package.json  
+|── node_modules/  
+&emsp;|── 好多東西但不重要  
+|── index.js  
+|── package-lock.json  
+|── package.json  
 
 之後就要開始寫程式囉  
 其實只需要寫在 index.js 裡而已，而且只有 40 幾行。  
