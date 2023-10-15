@@ -1,7 +1,5 @@
 # Discord-Rich-Presence
-好歐，這會教你怎麼改變你的 discord 狀態顯示欄。  
-看到新同學在用，感覺很屌，我就去學了一下。  
-這是我第一次寫 md 檔所以排版可能不好看，我還是個 noob。
+這會改變你的 discord 狀態顯示欄。
 # 開始:設定
 首先，要下載 node.js 才能跑  
 node.js 官網 : https://nodejs.org/zh-tw  
