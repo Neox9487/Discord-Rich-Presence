@@ -9,7 +9,7 @@ nvm github : https://github.com/coreybutler/nvm-windows
 在 command 輸入:  
 1. $ npm install discord.js  
 2. $ npm install discord-rpc  
-3. $ npm init -y  
+3. $ npm init
 
 會跑出 package-lock.json 和 package.json 是正常的  
 
