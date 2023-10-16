@@ -1,20 +1,11 @@
-const rpc = require('discord-rpc');
+import rpc from 'discord-rpc';
+import token from './token.json' assert{type:'json'};
 const client = new rpc.Client({
     transport : 'ipc',
 });
 
-//===以下為範例，可用 json 檔儲存===
-const ClientID = "1160967275625582713"; //來自機機人的 ID 
-const Image = "rickroll"; //來自機機人素材的的圖片名字
-const ImageText = "Rick you";
-const Button = "Rick Roll";
-const Url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
-const State = "Ricking";
-const Detail = "Never gonna give you up.";
-//================================
-
 client.login({
-    clientId : ClientID
+    clientId : token.ClientID // ClientId
 }).catch(console.error);
 
 client.on('ready', () => {
@@ -24,18 +15,20 @@ client.on('ready', () => {
     client.request('SET_ACTIVITY', {
         pid: process.pid,
         activity: {
-            details: Detail,
-            state: State,
+            details: token.Detail, // 描述(在玩什麼)
+            state: token.State, // 狀態
             timestamps: {
-                start: Date.now()
+                start: Date.now() // 玩了多久?
             },
             assets: {
-                large_image: Image,
-                large_text: ImageText,
+                large_image: token.largeImage, // 主要圖片素材的名稱
+                large_text: token.largeImageText, // 主要圖片描述
+                small_image: token.smallImage, // 小圖片素材的名稱
+                small_text: token.smallImageText // 小圖片描述
             },
-            buttons: [{
-                    label: Button,
-                    url: Url
+            buttons: [{ // 按鈕，可有可無
+                    label: token.Button, // 按鈕的字
+                    url: token.Url // 按鈕的連結
                 },
             ]
         }
