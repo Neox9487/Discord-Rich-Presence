@@ -1,5 +1,5 @@
 import rpc from 'discord-rpc';
-import token from './token.json' assert{type:'json'};
+import token from './token.json' assert{type:'json'}; // 讀取 token.js 中的資料
 const client = new rpc.Client({
     transport : 'ipc',
 });
