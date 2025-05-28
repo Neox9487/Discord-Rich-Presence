@@ -6,10 +6,9 @@
 node.js 官網 : https://nodejs.org/zh-tw  
 nvm github : https://github.com/coreybutler/nvm-windows  
 下載好後，就用 npm install 指令在你的資料夾中下載需用的 discord 套件  
-在 command 輸入:  
-1. $ npm install discord.js  
-2. $ npm install discord-rpc  
-3. $ npm init
+在 shell 輸入:  
+1. $ npm install discord-rpc  
+2. $ npm init
 
 會跑出 package-lock.json 和 package.json 是正常的  
 
